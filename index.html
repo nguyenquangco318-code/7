@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Học HTML/CSS Cơ Bản Cho Người Mới - FPT Polytechnic</title>
+    <style>
+        /* CSS cơ bản để trang web dễ nhìn, tập trung vào nội dung */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        header { background-color: white; padding: 20px; border-bottom: 3px solid #f05a28; text-align: center; border-radius: 8px 8px 0 0; }
+        .logo { width: 180px; }
+        main { background-color: white; padding: 40px; border-radius: 0 0 8px 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        
+        /* CSS cho các thẻ Heading để làm nổi bật cấu trúc */
+        h1 { color: #222; font-size: 32px; margin-bottom: 10px; text-transform: uppercase; }
+        h2 { color: #f05a28; font-size: 24px; margin-top: 30px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h3 { color: #444; font-size: 20px; margin-top: 25px; }
+        h4 { color: #666; font-size: 17px; font-style: italic; margin-top: 20px; }
+        
+        p { margin-bottom: 15px; text-align: justify; }
+        ul { margin-bottom: 20px; margin-left: 20px; }
+        li { margin-bottom: 10px; }
+        .author-box { background-color: #f0f0f0; padding: 15px; border-radius: 5px; font-style: italic; margin-top: -10px; margin-bottom: 30px; border-left: 5px solid #ccc; }
+        .image-container { text-align: center; margin: 30px 0; }
+        .main-image { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .image-caption { font-size: 14px; color: #777; margin-top: 8px; display: block; }
+        footer { text-align: center; margin-top: 50px; padding: 20px; color: #888; border-top: 1px solid #eee; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" 
+             alt="Logo Trường Cao đẳng FPT Polytechnic" class="logo">
+    </header>
+
+    <main>
+        <h1>Hướng dẫn học HTML và CSS cơ bản cho người mới bắt đầu</h1>
+
+        <div class="author-box">
+            Bài viết được tổng hợp bởi sinh viên FPT Polytechnic - Chuyên ngành Thiết kế đồ họa.
+        </div>
+
+        <p>Chào mừng các bạn đến với thế giới của thiết kế web. Nếu bạn đang muốn tự tay tạo ra những trang web tuyệt đẹp, bước đầu tiên chính là làm quen với hai ngôn ngữ nền tảng: HTML và CSS. Bài viết này sẽ cung cấp cho bạn cái nhìn tổng quan và lộ trình học tập hiệu quả nhất.</p>
+
+        <div class="image-container">
+            <img src="anhsv.jpg"
+            alt="Sinh viên FPT Polytechnic đang thực hành xây dựng website chuẩn SEO" class="main-image">
+            
+            <span class="image-caption">Hình 1: Sinh viên chuyên ngành Phần mềm thực hành Lab 7</span>
+        </div>
+
+        <h2>1. HTML - Ngôn ngữ đánh dấu siêu văn bản</h2>
+        <p>HTML (HyperText Markup Language) là bộ khung của mọi trang web. Nó xác định các thành phần của trang như tiêu đề, đoạn văn, hình ảnh, liên kết...</p>
+
+        <h3>1.1 Các thẻ HTML cơ bản</h3>
+        <p>Để bắt đầu, bạn cần nắm vững một số thẻ cơ bản sau:</p>
+        <ul>
+            <li><code>&lt;html&gt;</code>: Thẻ gốc bao bọc toàn bộ nội dung.</li>
+            <li><code>&lt;head&gt;</code>: Chứa thông tin về trang (tiêu đề, meta...).</li>
+            <li><code>&lt;body&gt;</code>: Chứa nội dung hiển thị cho người dùng.</li>
+            <li><code>&lt;h1&gt;</code> đến <code>&lt;h6&gt;</code>: Các thẻ tiêu đề (quan trọng cho SEO).</li>
+            <li><code>&lt;p&gt;</code>: Thẻ đoạn văn.</li>
+        </ul>
+
+        <h3>1.2 Cấu trúc phân cấp thẻ Heading chuẩn SEO</h3>
+        <p>Việc sử dụng thẻ Heading không chỉ để làm chữ to nhỏ, mà còn giúp robot Google hiểu được cấu trúc nội dung. Sơ đồ lý tưởng là:</p>
+        
+        <h4>1.2.1 Quy tắc thẻ H1 duy nhất</h4>
+        <p>Mỗi trang web chỉ được phép có 1 thẻ H1 duy nhất. Đây là tiêu đề chính và phải chứa từ khóa chính.</p>
+        
+        <h4>1.2.2 Quy tắc không nhảy bậc</h4>
+        <p>Bạn không nên dùng H3 ngay sau H1, mà phải dùng H2 trước. Cấu trúc phải đi theo trình tự hợp lý.</p>
+
+        <h2>2. CSS - Ngôn ngữ định kiểu trang web</h2>
+        <p>CSS (Cascading Style Sheets) dùng để làm đẹp cho bộ khung HTML. Nó xác định màu sắc, font chữ, bố cục và cách các thành phần hiển thị.</p>
+
+        <h3>2.1 Cách nhúng CSS vào HTML</h3>
+        <p>Có ba cách chính để bạn có thể áp dụng CSS:</p>
+        <p>...</p>
+
+        <h2>3. Lộ trình học HTML/CSS hiệu quả tại FPT Polytechnic</h2>
+        <p>Tại FPT Polytechnic, sinh viên sẽ được học qua các dự án thực tế để nhanh chóng nắm vững kiến thức.</p>
+        <p>...</p>
+    </main>
+
+    <footer>
+        <p>© 2024 - Bài thực hành Lab 7 - Môn Xây dựng trang web - FPT Polytechnic</p>
+        <p>THIẾT KẾ TRANG WEB - TRANG 1</p>
+    </footer>
+
+</body>
+</html>
